@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book an appointment</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="kiosk-page">
+
+  <div class="kiosk">
+    <div class="kiosk-header">
+      <div class="kiosk-eyebrow">Booking Terminal</div>
+      <div class="kiosk-title" id="biz-name">Loading…</div>
+      <div class="kiosk-sub" id="biz-hours"></div>
+    </div>
+
+    <div class="kiosk-log" id="log"></div>
+
+    <div class="kiosk-quickrow">
+      <button class="chip" data-text="menu">menu</button>
+      <button class="chip" data-text="reschedule">reschedule</button>
+      <button class="chip" data-text="cancel">cancel</button>
+      <button class="chip" data-text="help">help</button>
+    </div>
+
+    <form class="kiosk-inputrow" id="form">
+      <input id="input" type="text" placeholder="Type a message…" autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="customer.js"></script>
+</body>
+</html>
